@@ -11,11 +11,11 @@
 >
 > ### 👥 Project Team Members (Group PBL5 - Class 21PFIEV2)
 >
-> | Full Name                       |  Student ID  |
-> | :------------------------------ | :-----------: |
-> | **Vo Uyen Thu**           | `123210151` |
-> | **Truong Toan Minh Nhat** | `123210040` |
-> | **Nguyen Huu Hiep**       | `123210160` |
+> | Full Name                       |
+> | :------------------------------ |
+> | **Vo Uyen Thu**           |
+> | **Truong Toan Minh Nhat** |
+> | **Nguyen Huu Hiep**       |
 >
 > *Danang, Vietnam — 2026.*
 
@@ -102,6 +102,7 @@ $$
 
 ## 🛠 3. Block Diagram & Hardware Wiring Schematic
 
+
 ```text
                                 +-------------------+
                                 |   ESP32 DevKit    |
@@ -120,16 +121,14 @@ CH0:Base     CH1:Shoulder  CH2:Elbow               Motor FL      Motor FR      M
 (MG90S)      (MG90S)       (MG90S)                 (GPIO25/26)   (GPIO27/14)   (GPIO32/33,18/19)
 ```
 
-
-
 ## ⚙️ 4. Embedded Firmware & Blynk Communication (`xe_3axis.ino`)
 
 ### 4.1. Smooth Control Architecture & Task Timer
 
 The system utilizes non-blocking `BlynkTimer` scheduling:
 
-* **`servoSmoothTask` (20ms):** Interpolates servo angle steps using **$\text{SERVO\_STEP} = 2.5^\circ$** to minimize mechanical jerks.
-* **`motorRampTask` (20ms):** Accelerates/decelerates motor PWM according to **$\text{MOTOR\_RAMP\_STEP} = 12$** to prevent wheel slip and battery voltage drops.
+* **`servoSmoothTask` (20ms):** Interpolates servo angle steps using **$\text{SERVOSTEP} = 2.5^\circ$** to minimize mechanical jerks.
+* **`motorRampTask` (20ms):** Accelerates/decelerates motor PWM according to **$\text{MOTORRAMPSTEP} = 12$** to prevent wheel slip and battery voltage drops.
 
 ### 4.2. Blynk Virtual Pins Mapping
 
@@ -175,11 +174,8 @@ The simulation environment in `simulation/QHQD_robot_3dof.slx` includes:
 │   └── xe_3axis.ino             # ESP32 embedded source code (Arduino C++)
 ├── simulation/
 │   └── QHQD_robot_3dof.slx      # Simulink multi-body simulation model
-├── docs/
-│   ├── basocao.docx             # Complete project report (Word)
-│   └── baocao.pptx              # Final presentation slides (PowerPoint)
 ├── media/
-│   ├── image_553322.png         # Block diagrams and schematics
+│   ├── picture1-7.png       
 │   └── Video_2026-03-18_094628  # Demonstration video
 ├── .gitignore                   # Git build exclusion file
 └── README.md                    # Repository documentation
