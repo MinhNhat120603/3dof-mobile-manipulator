@@ -1,4 +1,3 @@
-
 # 🤖 3DOF Mobile Manipulator with Mecanum Wheels & ESP32 Control
 
 ---
@@ -12,11 +11,11 @@
 >
 > ### 👥 Project Team Members (Group PBL5 - Class 21PFIEV2)
 >
-> | Full Name                       |  Student ID  |
-> | :------------------------------ | :-----------: |
-> | **Vo Uyen Thu**           | `123210151` |
-> | **Truong Toan Minh Nhat** | `123210040` |
-> | **Nguyen Huu Hiep**       | `123210160` |
+> | Full Name                       |
+> | :------------------------------ |
+> | **Vo Uyen Thu**           |
+> | **Truong Toan Minh Nhat** |
+> | **Nguyen Huu Hiep**       |
 >
 > *Danang, Vietnam — 2026.*
 
@@ -119,8 +118,6 @@ CH0:Base     CH1:Shoulder  CH2:Elbow               Motor FL      Motor FR      M
 (MG90S)      (MG90S)       (MG90S)                 (GPIO25/26)   (GPIO27/14)   (GPIO32/33,18/19)
 ```
 
-
-
 ## ⚙️ 4. Embedded Firmware & Blynk Communication (`xe_3axis.ino`)
 
 ### 4.1. Smooth Control Architecture & Task Timer
@@ -175,7 +172,7 @@ The simulation environment in `simulation/QHQD_robot_3dof.slx` includes:
 ├── simulation/
 │   └── QHQD_robot_3dof.slx      # Simulink multi-body simulation model
 ├── media/
-│   ├── picture1/2/3		
+│   ├── picture1/2/3	
 │   └── Video_2026-03-18_094628  # Demonstration video
 ├── .gitignore                   # Git build exclusion file
 └── README.md                    # Repository documentation
