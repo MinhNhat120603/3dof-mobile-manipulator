@@ -12,11 +12,11 @@
 >
 > ### 👥 Project Team Members (Group PBL5 - Class 21PFIEV2)
 >
-> | Full Name                       |  Student ID  |
-> | :------------------------------ | :-----------: |
-> | **Vo Uyen Thu**           | `123210151` |
-> | **Truong Toan Minh Nhat** | `123210040` |
-> | **Nguyen Huu Hiep**       | `123210160` |
+> | Full Name                       |
+> | :------------------------------ |
+> | **Vo Uyen Thu**           |
+> | **Truong Toan Minh Nhat** |
+> | **Nguyen Huu Hiep**       |
 >
 > *Danang, Vietnam — 2026.*
 
