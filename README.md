@@ -1,23 +1,26 @@
 # 🤖 3DOF Mobile Manipulator with Mecanum Wheels & ESP32 Control
+<p align="center">
+  <img src="Image_and_video/Picture1.png" width="300">
+</p>
+
+<p align="center">
+  <b>3DOF Mobile Manipulator Prototype</b>
+</p>
 
 ---
 
-## 💌 Acknowledgements & Project Context
+## 🚀 Project Highlights
 
-> **Course Project Report (PBL5):** Advanced Robotic System Design
-> **Topic:** *"Design and Control of an Omnidirectional Mobile Robot with an Integrated 3DOF Robotic Arm"* > **Institution:** Danang University of Technology (DUT) | Project-Based Learning Program (PFIEV)
->
-> We would like to express our deepest gratitude to **Assoc. Prof. Dr. Vo Nhu Thanh** — our academic advisor, for his invaluable guidance, strategic insights, and continuous technical support throughout the entire duration of this research, ranging from theoretical modeling and MATLAB/Simulink simulation to experimental hardware implementation.
->
-> ### 👥 Project Team Members (Group PBL5 - Class 21PFIEV2)
->
-> | Full Name                       |
-> | :------------------------------ |
-> | **Vo Uyen Thu**           |
-> | **Truong Toan Minh Nhat** |
-> | **Nguyen Huu Hiep**       |
->
-> *Danang, Vietnam — 2026.*
+This project presents the design and implementation of a Mobile Manipulator system combining:
+
+- Omnidirectional Mecanum mobile platform
+- 3DOF robotic manipulator
+- ESP32 wireless control
+- Blynk IoT dashboard
+- MATLAB/Simulink validation
+- Automated pick-and-place operation
+
+The system is capable of moving in any direction while simultaneously positioning a robotic arm for object manipulation tasks.
 
 ---
 
@@ -61,7 +64,7 @@ $$
 * **Inverse Kinematics (IK):**
 
 $$
-\theta_1 = \operatorname{atan2}(y, x)
+\theta_1 = \text{atan2}(y, x)
 $$
 
 $$
@@ -69,11 +72,11 @@ r = \sqrt{x^2 + y^2}, \quad z' = z - d_1, \quad D = \frac{r^2 + z'^2 - L_1^2 - (
 $$
 
 $$
-\theta_3 = \operatorname{atan2}\left(\pm\sqrt{1-D^2}, D\right)
+\theta_3 = \text{atan2}\left(\pm\sqrt{1-D^2}, D\right)
 $$
 
 $$
-\theta_2 = \operatorname{atan2}(z', r) - \operatorname{atan2}\left((L_2+L_3)\sin\theta_3, L_1 + (L_2+L_3)\cos\theta_3\right)
+\theta_2 = \text{atan2}(z', r) - \text{atan2}\left((L_2+L_3)\sin\theta_3, L_1 + (L_2+L_3)\cos\theta_3\right)
 $$
 
 ---
@@ -180,6 +183,27 @@ The simulation environment in `simulation/QHQD_robot_3dof.slx` includes:
 ├── .gitignore                   # Git build exclusion file
 └── README.md                    # Repository documentation
 ```
+
+---
+
+## 💌 Acknowledgements & Project Context
+
+> **Course Project Report (PBL5):** Advanced Robotic System Design
+> **Topic:** *"Design and Control of an Omnidirectional Mobile Robot with an Integrated 3DOF Robotic Arm"* > **Institution:** Danang University of Technology (DUT) | Project-Based Learning Program (PFIEV)
+>
+> We would like to express our deepest gratitude to **Assoc. Prof. Dr. Vo Nhu Thanh** — our academic advisor, for his invaluable guidance, strategic insights, and continuous technical support throughout the entire duration of this research, ranging from theoretical modeling and MATLAB/Simulink simulation to experimental hardware implementation.
+>
+> ### 👥 Project Team Members (Group PBL5 - Class 21PFIEV2)
+>
+> | Full Name                       |
+> | :------------------------------ |
+> | **Vo Uyen Thu**           |
+> | **Truong Toan Minh Nhat** |
+> | **Nguyen Huu Hiep**       |
+>
+> *Danang, Vietnam — 2026.*
+
+---
 
 ## 🔬 7. Current Limitations & Future Work
 
