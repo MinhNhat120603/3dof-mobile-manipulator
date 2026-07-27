@@ -7,6 +7,14 @@
   <b>3DOF Mobile Manipulator Prototype</b>
 </p>
 
+<p align="center">
+  <img src="Image_and_video/control.jpg" width="300">
+</p>
+
+<p align="center">
+  <b>Blynk control</b>
+</p>
+
 ---
 
 ## 🚀 Project Highlights
